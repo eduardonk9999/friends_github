@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(116,146,253);
+  background: radial-gradient(circle, rgba(116,146,253,1) 0%, rgba(124,30,235,1) 100%);
+
+  font-family: 'Balsamiq Sans', cursive;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+
+img.logo {
+  max-width: 800px;
+  width: 50%;
+}
+
+h1.title-principal {
+  display: block;
+  width: 50%;
+  color: #fff;
+}
+
+.busca-user {
+  margin: 0 auto;
+  display: block;
+  max-width: 1000px;
+  display: flex;
+}
+
+.busca-user input {
+  padding: 20px;
+  width: 90%;
+  border: none;
+  border-radius: 3px;
+  font-size: 30px;
+}
+
+.busca-user button {
+  padding: 20px;
+  font-weight: 800;
+  font-size: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #ff7a04;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.user {
+  max-width: 1350px;
+  margin: 60px auto 0 auto;
+}
+
+.user-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 180px;
+  border: 15px solid #f5f2ff;
+  box-shadow: 10px 10px 15px #00000047;
+}
+
+ul.lista-repositorios li {
+  color: #fff;
+  list-style: none;
+  margin: 21px 10px;
+  background: #4a00a6;
+  width: 100%;
+  max-width: 300px;
+  padding: 80px 10px 10px 10px;
+  height: 200px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 10px 10px 15px #00000047;
+}
+
+ul.lista-repositorios {
+  display: flex;
+  flex-wrap: wrap;
+}
+.user-img {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media(max-width: 768px) {
+  header{
+    flex-direction: column;
+  }
+  h1.title-principal {
+    display: block;
+    width: 80%;
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
+  .busca-user{
+    flex-direction: column;
+  }
+  .busca-user button{
+    width: 90%;
+    margin-top: 10px;
+  }
+  .busca-user input, button{
+    margin: 0 auto;
+  }
+  img.logo{
+    width: 100%;
+  }
+}
